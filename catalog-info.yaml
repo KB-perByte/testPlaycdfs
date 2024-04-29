@@ -1,0 +1,21 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: abc.test1
+  description: sds
+  tags:
+    - ansible
+    - collection
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: KB-perByte/testPlaycdfs
+  links:
+    - url: https://devspaces.apps.ansible-rhdh.testing.ansible.com/#https://github.com/KB-perByte/testPlaycdfs
+      title: Ansible Workspace link
+      icon: web
+spec:
+  type: playbook-project
+  system: system:default/podcast
+  lifecycle: production
+  owner: group:default/team-d
